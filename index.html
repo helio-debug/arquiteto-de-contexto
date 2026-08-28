@@ -1,4 +1,5 @@
 <meta charset="utf-8">
+<meta name="color-scheme" content="light only">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Arquiteto de Contexto</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,21 +17,10 @@
   --mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
   --col:41rem;
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --paper:#121316; --alt:#191B1F; --ink:#EDEDEA; --muted:#94979C;
-    --rule:#2A2D33; --mark:#5E4E05; --mark-ink:#FFF3BC;
-    --flag:#F0785C; --flag-bg:#26170F;
-    --slot:#1E1B12; --slot-line:#4E4426; --slot-ink:#C4B36A;
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#121316; --alt:#191B1F; --ink:#EDEDEA; --muted:#94979C;
-  --rule:#2A2D33; --mark:#5E4E05; --mark-ink:#FFF3BC;
-  --flag:#F0785C; --flag-bg:#26170F;
-  --slot:#1E1B12; --slot-line:#4E4426; --slot-ink:#C4B36A;
-}
 
+
+
+:root{color-scheme:light}
 *{box-sizing:border-box}
 body{
   margin:0; background:var(--paper); color:var(--ink);
@@ -249,8 +239,6 @@ html.edit .slot,html.edit .quote{display:block}
   gap:1.1rem 1.9rem}
 .marcas img{height:19px; width:auto; display:block; opacity:.42;
   filter:brightness(0) saturate(0)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .marcas img{filter:brightness(0) saturate(0) invert(1); opacity:.5}}
-:root[data-theme="dark"] .marcas img{filter:brightness(0) saturate(0) invert(1); opacity:.5}
 @media(max-width:480px){.marcas .row{gap:.9rem 1.3rem} .marcas img{height:16px}}
 
 /* ---------- livro 3D ---------- */
