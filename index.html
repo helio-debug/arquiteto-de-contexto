@@ -129,6 +129,11 @@ mark{background:linear-gradient(180deg,transparent 8%,var(--mark) 8%,var(--mark)
 
 /* ---------- bullets ---------- */
 .bullets{list-style:none; margin:1.2rem 0 0; padding:0; display:grid; gap:1rem}
+@media(max-width:520px){
+  .wrap{padding:0 1.5rem}
+  .bullets li{grid-template-columns:1.25rem 1fr; gap:.6rem; font-size:.98rem}
+  .bullets .ck{font-size:.86rem}
+}
 .bullets li{display:grid; grid-template-columns:1.35rem 1fr; gap:.72rem; align-items:start; font-size:1.01rem; line-height:1.5}
 .bullets .ck{font-size:.92rem; line-height:1.6; font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
 .bullets b{font-weight:700}
@@ -676,7 +681,6 @@ html.edit .slot,html.edit .quote{display:block}
           <div class="rule"></div>
           <div class="au">Hélio Costa Jr.</div>
         </div>
-      </div>
       </div>
     </div>
     <p class="book-cap"><b>172 páginas · PDF + EPUB</b>Entrega imediata. Você está lendo em dois minutos.</p>
